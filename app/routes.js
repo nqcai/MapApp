@@ -1,9 +1,16 @@
 // Dependencies
-var mongoose 				= require('mongoose');
+var mongoose 					= require('mongoose');
 var User						= require('./model.js');
 
 // Opens App Routes
 module.exports = function(app) {
+
+
+
+
+
+
+
 
 	// GET Routes
 	// ---------------------------------
@@ -20,6 +27,11 @@ module.exports = function(app) {
 			res.json(users);
 		});
 	});
+
+
+
+
+
 
 	// POST Routes
 	// ---------------------------------
@@ -99,15 +111,7 @@ module.exports = function(app) {
 		});
 	});
 
+
+
+
 };
-
-
-
-
-
-
-
-
-
-
-
