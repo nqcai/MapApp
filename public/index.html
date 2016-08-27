@@ -3,8 +3,8 @@
 <html class="no-js" ng-app="meanMapApp">
 <head>
     <meta charset="utf-8">
-    <title>Scotch MEAN Map</title>
-    <meta name="description" content="An example demonstrating Google Map integration with MEAN Apps">
+    <title>Map App</title>
+    <meta name="description" content="MEAN App with Google Maps API">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
@@ -34,25 +34,31 @@
 <body>
 <div class="container">
     <div class="header">
-        <ul class="nav nav-pills pull-right">
+        
+        <h3 class="text-muted">Map App</h3>
+        <ul class="nav nav-pills pull-left">
             <li active><a href="/#/join">Join the Team</a></li>
             <li disabled><a href="/#/find">Find Teammates</a></li>
+
         </ul>
-        <h3 class="text-muted">The Scotch MEAN MapApp</h3>
+        <br>
+        
     </div>
     <!-- Map and Side Panel -->
     <div class="row content">
+        <br>
+        <div ng-view></div>
         <!-- Google Map -->
         <div class="col-md-7">
-            <div id="map" style="width:645px; height:645px"></div>
+            
+            <div id="map" style="width:645px; height:655px"></div>
         </div>
-        <div ng-view></div>
+        
     </div>
     <hr/>
     <!-- Footer -->
     <div class="footer">
-        <p class="text-center"><span class="glyphicon glyphicon-check"></span> Created by Ahmed Haque for Scotch IO -
-            <a href="https://scotch.io/">App Tutorial</a> | <a href="https://github.com/afhaque/MeanMapAppV2.0">Github Repo</a></p>
+        
     </div>
 </div>
 </body>

@@ -20,11 +20,11 @@
                 <!-- Text Boxes and Other User Inputs. Note ng-model binds the values to Angular $scope -->
                 <div class="form-group">
                     <label for="latitude">Your Latitude</label>
-                    <input type="text" class="form-control" id="latitude" placeholder="39.5" ng-model="formData.latitude" readonly>
+                    <input type="text" class="form-control" id="latitude" placeholder="Locating..." ng-model="formData.latitude" readonly>
                 </div>
                 <div class="form-group">
                     <label for="longitude">Your Longitude</label>
-                    <input type="text" class="form-control" id="longitude" placeholder="-98.35" ng-model="formData.longitude" readonly>
+                    <input type="text" class="form-control" id="longitude" placeholder="Also locating..." ng-model="formData.longitude" readonly>
                 </div>
                 <div class="form-group">
                     <label for="distance">Max. Distance (miles)</label>
@@ -43,8 +43,8 @@
                         Female
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" name="optionsRadios" id="checkother" value="What's it to ya?" ng-model="formData.other" ng-true-value="'What\'s it to ya?'">
-                        What's it to ya?
+                        <input type="checkbox" name="optionsRadios" id="checkother" value="Undisclosed" ng-model="formData.other" ng-true-value="'What\'s it to ya?'">
+                        Undisclosed
                     </label>
                 </div>
                 <div class="form-group">
@@ -74,7 +74,7 @@
 
         <!-- Footer panel for displaying count. Note how it will only display if queryCount is greater than 0 -->
         <div ng-show="queryCount>0" class="panel-footer">
-            <p class="text-center">Hot Dang! We Found {{queryCount}} Teammates.</p>
+            <p class="text-center">Found {{queryCount}} Teammates.</p>
         </div>
     </div>
 </div>

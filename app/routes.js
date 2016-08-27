@@ -5,13 +5,6 @@ var User						= require('./model.js');
 // Opens App Routes
 module.exports = function(app) {
 
-
-
-
-
-
-
-
 	// GET Routes
 	// ---------------------------------
 	// Retrieve records for all users in the db
@@ -27,11 +20,6 @@ module.exports = function(app) {
 			res.json(users);
 		});
 	});
-
-
-
-
-
 
 	// POST Routes
 	// ---------------------------------
@@ -57,9 +45,9 @@ module.exports = function(app) {
 		// Grab all of the query parameters from body
 		var lat 					= req.body.latitude;
 		var long 					= req.body.longitude;
-		var distance 			= req.body.distance;
+		var distance 				= req.body.distance;
 		var male 					= req.body.male;
-		var female          = req.body.female;
+		var female          		= req.body.female;
     var other           = req.body.other;
     var minAge          = req.body.minAge;
     var maxAge          = req.body.maxAge;
@@ -99,7 +87,7 @@ module.exports = function(app) {
 		}
 
 		if (reqVerified) {
-			query = query.where('htmlverified').equals("Yep (Thanks for giving us real data!)");
+			query = query.where('htmlverified').equals("HTML Verified Location");
 		}
 
 		// Execute query and return query results
@@ -110,8 +98,5 @@ module.exports = function(app) {
 			res.json(users);
 		});
 	});
-
-
-
 
 };
